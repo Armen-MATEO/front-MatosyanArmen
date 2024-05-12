@@ -1,0 +1,37 @@
+
+
+.homeContainer {
+  width: 1920px;
+  height: 1857px;
+}
+
+@media (width <= 375px) {
+  .homeContainer {
+    width: 375px;
+  }
+
+  .contentWraper {
+    width: 375px;
+    display: block;
+  }
+}
+
+@media (width <= 768px) {
+}
+
+.contentWraper {
+  display: flex;
+  justify-content: center;
+}
+
+.menuwraper {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  transition: all 1s ease-out;
+}
+
+.menuwraper.active {
+  position: unset;
+  transition: all 1s ease-out;
+}
